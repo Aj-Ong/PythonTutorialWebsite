@@ -4,6 +4,7 @@
 1. `npm install`
 2. `pip install -r requirements.txt`
 3. `npm install --save video-react react react-dom redux` for React Video Player
+4. `npm install react-router-dom --save` to reroute our users from the homepage to the tutorial page or about page
 
 ## Setup
 1. Run `echo "DANGEROUSLY_DISABLE_HOST_CHECK=true" > .env.development.local` in the project directory
