@@ -1,5 +1,5 @@
 import os
-from flask import Flask, send_from_directory
+from flask import Flask, send_from_directory, render_template
 
 app = Flask(__name__, static_folder='./build/static')
 
@@ -8,8 +8,11 @@ app = Flask(__name__, static_folder='./build/static')
 @app.route('/<path:filename>')
 def index(filename):
     return send_from_directory('./build', filename)
-
-
+    
+@app.route('/about')
+def about():
+    return render_template('about.html')
+    
 app.run(
     host=os.getenv('IP', '0.0.0.0'),
     port=8081 if os.getenv('C9_PORT') else int(os.getenv('PORT', 8081)),

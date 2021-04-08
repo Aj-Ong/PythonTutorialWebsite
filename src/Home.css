@@ -1,0 +1,44 @@
+.topnav {
+  background-color: #646464;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav button {
+  float: left;
+  color: #306998;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav button:hover {
+  background-color: #ffd43b;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav button.active {
+  background-color: #4b8bbe;
+  color: white;
+}
+
+/* Python Color Scheme 	
+Name: Cyan-Blue Azure
+Hex: #4b8bbe
+
+Name: Lapis Lazuli
+Hex: #306998
+
+Name: Shandy
+Hex: #ffe873
+
+Name: Sunglow
+Hex: #ffd43b
+
+Name: Granite Gray
+Hex: #646464
+
+*/
