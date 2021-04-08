@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "../node_modules/video-react/dist/video-react.css"; // import css
 import './Home.css';
-import { Player } from 'video-react';
 
 export function TutorialsComponent(prop) {
   return (
