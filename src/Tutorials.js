@@ -46,7 +46,7 @@ export function Tutorials(prop) {
     </div>
     
     
-    <h1 onClick={onClickTutorial}>Tutorial 1</h1> 
+    <h1 onClick={onClickTutorial}>Lesson 1: Data Types</h1> 
     
      {links.map((item, index) => (
           <TutorialsComponent

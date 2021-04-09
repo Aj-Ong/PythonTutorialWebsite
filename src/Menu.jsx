@@ -3,9 +3,13 @@ import ButtonComponent from "./ButtonComponent";
 
 export function Menu(props) {
 
+  const clickHandler = () => {
+    //TODO
+  }
+
     return (
       <div>
-        <ButtonComponent tutorialName="Lesson 1: Data Types" />
+        <ButtonComponent tutorialName="Lesson 1: Data Types" onClick={clickHandler}/>
         <ButtonComponent tutorialName="Lesson 2: Variables" />
         <ButtonComponent tutorialName="Lesson 3: If Statement" />
         <ButtonComponent tutorialName="Lesson 4: For Loop" />
