@@ -5,6 +5,8 @@ import { Player } from 'video-react';
 import { About } from './About.js';
 import { HomeScreen } from './Home.js';
 import { TutorialsComponent } from './TutorialsComponent.js';
+import { Menu } from "./Menu.jsx";
+import "./styles.css"
 
 export function Tutorials(prop) {
   const [page, changePage] = useState();
@@ -32,13 +34,19 @@ export function Tutorials(prop) {
   
   return (
   <div>
+    
     <div class="topnav">
       <button onClick={onClickHome}>Home</button>
       <button class="active" >Tutorials</button>
       <button onClick={onclickAbout} >About Us</button>
     </div>
+
+    <div className="menu">
+      <Menu />
+    </div>
     
-    <h1 onClick={onClickTutorial}>Tutorial 1</h1> 
+    
+    <h1 onClick={onClickTutorial}>Lesson 1: Data Types</h1> 
     
      {links.map((item, index) => (
           <TutorialsComponent
@@ -49,12 +57,14 @@ export function Tutorials(prop) {
           />
         ))}
         
+
     <h1 onClick={onClickTutorial}>Test</h1>
     <Player
     playsInline
     poster="/assets/poster.png"
     src='https://media.w3.org/2010/05/sintel/trailer_hd.mp4'
     />
+    
   </div>
   );
 }
