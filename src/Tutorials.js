@@ -56,7 +56,15 @@ export function Tutorials(prop) {
             onClick={() => onClickTutorial(item)}
           />
         ))}
+        
 
+    <h1 onClick={onClickTutorial}>Test</h1>
+    <Player
+    playsInline
+    poster="/assets/poster.png"
+    src='https://media.w3.org/2010/05/sintel/trailer_hd.mp4'
+    />
+    
   </div>
   );
 }
