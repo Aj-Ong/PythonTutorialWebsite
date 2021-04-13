@@ -29,12 +29,12 @@ export function About(prop) {
       <button onClick={onClickHome}>Home</button>
       <button onClick={onclickTutorials} >Tutorials</button>
       <button class="active" >About Us</button>
-    </div> 
-    AJ Ong
-    Johanna Ngyuen
-    Rita Moreno
-    Christy Tseng
-    Chinoso Chima
+    </div>
+    AJ Ong<br></br>
+    Johanna Ngyuen<br></br>
+    Rita Moreno<br></br>
+    Christy Tseng<br></br>
+    Chinoso Chima<br></br>
   </div>
   );
 }

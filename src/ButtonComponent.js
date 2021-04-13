@@ -18,12 +18,19 @@ const ColorButton = withStyles((theme) => ({
 
 
 export default function ButtonComponent(props) {
-
+  
+  function clickHandler(){
+    console.log(props.link);
+    props.changeLink(props.link);
+    props.changeHeader(props.tutorialName);
+  }
   return (
     <div>
-      <ColorButton style={{ minWidth: 250, border: "1px solid white", minHeight: 60 }} variant="contained" color="primary">
+      <div>
+      <ColorButton style={{ minWidth: 250, border: "1px solid white", minHeight: 60 }} variant="contained" color="primary" onClick={clickHandler}>
         {props.tutorialName}
       </ColorButton>
+      </div>
     </div>
   );
 }
