@@ -6,7 +6,6 @@ import {
 } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { cyan } from '@material-ui/core/colors';
-import { TutorialsComponent } from './TutorialsComponent.js';
 
 const ColorButton = withStyles((theme) => ({
   root: {
@@ -23,7 +22,7 @@ export default function ButtonComponent(props) {
   function clickHandler(){
     console.log(props.link);
     props.changeLink(props.link);
-    props.changeHeader(props.tutorialName)
+    props.changeHeader(props.tutorialName);
   }
   return (
     <div>

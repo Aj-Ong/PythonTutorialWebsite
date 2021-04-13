@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ButtonComponent from "./ButtonComponent";
-import { TutorialsComponent } from './TutorialsComponent.js';
 
 export function Menu(props) {// Only Tutorial 1 and 3 are working so far
     return ( // the link is being passed to the button component and the onclick is now in the button component code
