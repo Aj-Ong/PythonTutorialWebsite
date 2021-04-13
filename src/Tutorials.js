@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import "../node_modules/video-react/dist/video-react.css"; // import css
 import './Home.css';
-import { Player } from 'video-react';
 import { About } from './About.js';
 import { HomeScreen } from './Home.js';
 import { TutorialsComponent } from './TutorialsComponent.js';
-import { Menu } from "./Menu.jsx";
-import "./styles.css"
+import { Menu } from "./Menu.js";
+import "./styles.css";
 
 export function Tutorials(prop) {
   const [page, changePage] = useState();
-  const links = ['https://drive.google.com/file/d/1-OA_LvTO8WoBNAJ8DO5Trwp2MxrzxzdA/preview'];
+  const [link, changeLink] = useState("https://drive.google.com/file/d/1-OA_LvTO8WoBNAJ8DO5Trwp2MxrzxzdA/preview");
+  const [lessonHeader, changeHeader] = useState("Lesson 1: Data Types");
   
   function onclickAbout(){
     changePage("about");
@@ -18,9 +18,6 @@ export function Tutorials(prop) {
   
   function onClickHome(){
     changePage("home");
-  }
-  function onClickTutorial(index){
-    console.log("HEY --- " + index);
   }
   if(page === "home")  
   return (
@@ -42,28 +39,13 @@ export function Tutorials(prop) {
     </div>
 
     <div className="menu">
-      <Menu />
+      <Menu changeLink={changeLink} changeHeader={changeHeader}/>
     </div>
     
-    
-    <h1 onClick={onClickTutorial}>Lesson 1: Data Types</h1> 
-    
-     {links.map((item, index) => (
-          <TutorialsComponent
-            key={index}
-            id={index}
-            link={item}
-            onClick={() => onClickTutorial(item)}
+    <h1>{lessonHeader}</h1> 
+    <TutorialsComponent
+      link={link}
           />
-        ))}
-        
-
-    <h1 onClick={onClickTutorial}>Test</h1>
-    <Player
-    playsInline
-    poster="/assets/poster.png"
-    src='https://media.w3.org/2010/05/sintel/trailer_hd.mp4'
-    />
     
   </div>
   );

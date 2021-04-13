@@ -11,4 +11,3 @@ export function TutorialsComponent(prop) {
 }
 
 export default TutorialsComponent;
-

@@ -6,6 +6,7 @@ import {
 } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { cyan } from '@material-ui/core/colors';
+import { TutorialsComponent } from './TutorialsComponent.js';
 
 const ColorButton = withStyles((theme) => ({
   root: {
@@ -18,12 +19,19 @@ const ColorButton = withStyles((theme) => ({
 
 
 export default function ButtonComponent(props) {
-
+  
+  function clickHandler(){
+    console.log(props.link);
+    props.changeLink(props.link);
+    props.changeHeader(props.tutorialName)
+  }
   return (
     <div>
-      <ColorButton style={{ minWidth: 250, border: "1px solid white", minHeight: 60 }} variant="contained" color="primary">
+      <div>
+      <ColorButton style={{ minWidth: 250, border: "1px solid white", minHeight: 60 }} variant="contained" color="primary" onClick={clickHandler}>
         {props.tutorialName}
       </ColorButton>
+      </div>
     </div>
   );
 }
