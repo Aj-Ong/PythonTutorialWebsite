@@ -30,11 +30,18 @@ export function About(prop) {
       <button onClick={onclickTutorials} >Tutorials</button>
       <button class="active" >About Us</button>
     </div>
-    AJ Ong<br></br>
-    Johanna Ngyuen<br></br>
-    Rita Moreno<br></br>
-    Christy Tseng<br></br>
-    Chinoso Chima<br></br>
+
+    <div class="we">
+      These are out group members: <br></br>
+      <br></br>
+      <ul>
+        <li>AJ Ong</li><br></br>
+        <li>Johanna Ngyuen</li><br></br>
+        <li>Rita Moreno</li><br></br>
+        <li>Yu-Ching Tseng (Christy)</li><br></br>
+        <li> Chinoso Chima</li><br></br>
+      </ul>
+    </div>
   </div>
   );
 }

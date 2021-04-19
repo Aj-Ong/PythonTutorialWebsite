@@ -3,6 +3,30 @@
   overflow: hidden;
 }
 
+.welcome{
+  text-align: center;
+  position: center;
+  margin-top: 8%;
+  color: grey;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px cornflowerblue;
+}
+
+.python_img{
+  width: 70%;
+  height: auto;
+  text-align: center;
+}
+
+.we{
+  font-size: 20px;
+  text-align: left;
+  margin: auto;
+  padding: 5%;
+  width: 60%;
+  max-width: 350px;
+}
+
 /* Style the links inside the navigation bar */
 .topnav button {
   float: left;

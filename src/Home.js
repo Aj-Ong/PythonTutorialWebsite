@@ -3,6 +3,8 @@ import "../node_modules/video-react/dist/video-react.css"; // import css
 import './Home.css';
 import { About } from './About.js';
 import { Tutorials } from './Tutorials.js';
+import python from './python.png';
+
 
 export function HomeScreen(prop) {
   const [page, changePage] = useState();
@@ -32,9 +34,13 @@ export function HomeScreen(prop) {
         <button class="active" >Home</button>
         <button onClick={onclickTutorials} >Tutorials</button>
         <button onClick={onclickAbout} >About Us</button>
-      </div> 
-      <div class="home">
-        Welcome to our Python Tutorial Website!
+      </div>
+      <div class="welcome">
+        <h2>Welcome to our Python Tutorial Website!</h2>
+        <br></br>
+        <br></br>
+        <br></br>
+        <img class="python_img" src={python}/>
       </div>
     </div>
   );
